@@ -1,5 +1,13 @@
 # Prompts
-Prompts for AI artwork
+
+Prompts for AI artwork developed by 3Games.
+
+- [Tips](#tips)
+- [F222 Model](#f222-model)
+- [TrinArt V1 Model](#trinartv1)
+- [Mo Di Diffusion Model](#mo-di-diffusion)
+- [Samdoesart Model](#samdoesart)
+- [Default model](#default-model)
 
 ## Tips
 
@@ -7,7 +15,7 @@ Prompts for AI artwork
 
 - The artist, for example: "by alexi zaitsev, by Antoine Blanchard, by Brent Heighton, by Jeremy Mann" is the important part for the style, add some favourites like "masterpiece, intricate, 8k".
 
-- negative prompts: standard stuff like "name, tiled, frame, border, lowres, signs, memes, labels, text, error, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry"
+- negative prompts: Use a [standard negative prompt](#improved-shared-negative-prompt)
 
 -  **DPM++2M Karras** sampler between 50-80 steps gives an ideal amount of grain for photorealistic surfaces.
 
@@ -28,8 +36,9 @@ I generally use higher dimensions (512x760) but some images will have consistenc
 
 Also I should add that I do SD upscale but still change the dimensions to do only one render (so I put 680x1024) for the first upscale with a medium strength, and then do another upscale with the same dims or just a bit more, so it do 4 render with a very low strength (like 0.2)
 
-If Version < SD 2.0 = max height == 768
-If Version > SD 2.0 = mas height == higher than 768
+If Version < SD 2.0 = max height == **768**
+
+If Version > SD 2.0 = mas height == **higher than 768**
 
 
 ### Improved shared negative prompt:
@@ -97,7 +106,7 @@ https://rentry.org/sdmodels
 
 ```wide shot, best quality lapis erebcir highres 1girl bangs black gloves brown hair closed mouth hair between eyes looking at viewer male focus bald beard blue eyes```
 
-##  Stable Diffusion TrinArt Characters model v1
+##  TrinArtv1
 
 trinart_characters_19.2m_stable_diffusion_v1 is a stable diffusion v1-based model trained by roughly 19.2M anime/manga style images (pre-rolled augmented images included) plus final finetuning by about 50,000 images. This model seeks for a sweet spot between artistic style versatility and anatomical quality within the given model spec of SDv1.
 
@@ -149,7 +158,7 @@ https://huggingface.co/nitrosocke/mo-di-diffusion
 - Seed: 1355059992, 
 - Size: 512x512
 
-## samdoesart model
+## samdoesart
 
 https://anonfiles.com/85B2H9Hfy9/samdoesarts_v2_ckpt
 https://rentry.org/2oz58
