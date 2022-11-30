@@ -8,6 +8,8 @@ Prompts for AI artwork developed by 3Games.
 - [Mo Di Diffusion Model](#mo-di-diffusion)
 - [Samdoesart Model](#samdoesart)
 - [Default model](#default-model)
+- [Pickle Scanners](#pickle-scanners)
+- [Good Reading](#good-reading)
 
 ## Tips
 
@@ -221,6 +223,16 @@ Prompt: ```redhead, samdoesart```
 **Negative prompt**: 
 
 ```make up, ugly, hands, blurry, low resolution, animated, cartoonSteps: 30, Sampler: Euler a, CFG scale: 7, Size: 768x768, Model: 768-v-ema```
+
+## Pickle Scanners
+
+Malicious code can be executed in these any model.  These models evaluate code using ```eval``` which will execute any code regardless as there is no validation.  Some models rely on libraries outside of their scope.  These are called Pickles.  Some pickles can be bad.  Use these scanners to check for bad actors in your models:
+
+- https://github.com/zxix/stable-diffusion-pickle-scanner
+
+## Good Reading
+
+- https://web.stanford.edu/class/cs81n/command.txt
 
 
 
