@@ -1,4 +1,4 @@
-# Engineering Prompts for Stable Diffusion
+# Engineering Prompts for Stable Diffusion 📝
 
 A comprehensive guide to crafting effective prompts for stable diffusion.
 
@@ -11,11 +11,11 @@ A comprehensive guide to crafting effective prompts for stable diffusion.
 5. [Advanced Tips and Tricks](#advanced-tips-and-tricks)
 6. [Prompt Examples](#prompt-examples)
 
-## Introduction 🌟
+## Introduction
 
 Stable diffusion is a powerful technique for generating high-quality images using ML models. Crafting effective prompts is crucial to achieving desired results. This guide will provide you with deep insights and recommendations for creating prompts that drive stable diffusion to produce the outcomes you seek.
 
-## Prompt Crafting Principles 🎯
+## Prompt Crafting Principles
 
 Effective prompt engineering for stable diffusion follows these key principles:
 
@@ -24,7 +24,7 @@ Effective prompt engineering for stable diffusion follows these key principles:
 - **Negative Prompts**: Employ standard negative prompts to guide the model's generation process away from undesirable outcomes.
 - **Sampler Selection**: Choose the appropriate sampler for your desired image quality and details.
 
-## Techniques for Generating Detailed Prompts 📝
+## Techniques for Generating Detailed Prompts
 
 To craft detailed prompts that guide stable diffusion effectively, consider the following techniques:
 
@@ -33,7 +33,7 @@ To craft detailed prompts that guide stable diffusion effectively, consider the 
 - **Reference Images**: Use reference images or links to help guide the model in generating images that match your desired style or content.
 - **Iterative Refinement**: Refine the prompt iteratively, making adjustments based on the outcomes of previous generations.
 
-## Handling Common Issues with Prompts 🛠️
+## Handling Common Issues with Prompts
 
 Address common issues that may arise during the prompt engineering process:
 
@@ -41,7 +41,7 @@ Address common issues that may arise during the prompt engineering process:
 - **Lack of Detail**: Add specific keywords to emphasize desired details, such as "freckles, skin pores, detailed skin, goosebumps" for skin textures.
 - **Inconsistent Outcomes**: Limit the dimensions of the generated image to avoid consistency issues, and consider upscaling the image as needed.
 
-## Advanced Tips and Tricks 🔥
+## Advanced Tips and Tricks
 
 Employ advanced techniques to optimize your prompts for stable diffusion:
 
@@ -52,7 +52,7 @@ Employ advanced techniques to optimize your prompts for stable diffusion:
 
 By following these guidelines and recommendations, you can craft effective prompts that drive stable diffusion to produce high-quality images that match your desired style and content.
 
-## Prompt Examples 📷
+## Prompt Examples
 
 A collection of prompt examples to inspire and guide the creation of effective prompts for stable diffusion.
 
