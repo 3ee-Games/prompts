@@ -104,4 +104,28 @@ A collection of prompt examples to inspire and guide the creation of effective p
    abstract expressionist painting, bold colors, dynamic brush strokes, intense emotion, by Jackson Pollock
    ```
 
+9. **Forest Guardian Warrior**
+
+   ```
+   A majestic forest guardian warrior, with hair flowing in the wind and piercing blue eyes, stands near a rainforest with a cascading waterfall in the background. She wears gleaming gold and white armor, adorned with big hoop gold earrings and a tiara. A battle axe and broad sword hang from her belt, ready for battle. This should be a lifelike, super highly detailed, professional digital painting with HD quality and 8k resolution, in the style of Artgerm, Greg Rutkowski, and Loish.
+   ```
+
+10. **Medieval Knight Warrior**
+
+   ```
+   A noble and chivalrous medieval knight warrior, with hair flowing in the wind and piercing blue eyes, stands in front of a castle with a clear blue sky in the background. She wears gleaming gold and white armor, adorned with big hoop gold earrings and a tiara. A battle axe and broad sword hang from her belt, ready for battle. This should be a lifelike, super highly detailed, professional digital painting with HD quality and 8k resolution, in the style of Alphonse Mucha, Artgerm, and Greg Rutkowski.
+   ```
+
+11. **Futuristic Space Warrior**
+
+   ```
+   A fierce and futuristic space warrior, with hair flowing in the wind and piercing blue eyes, stands on the bridge of a spaceship with stars and galaxies in the background. She wears gleaming gold and white armor, adorned with big hoop gold earrings and a tiara. A laser sword and plasma blaster hang from her belt, ready for battle. This should be a lifelike, super highly detailed, professional digital painting with HD quality and 8k resolution, in the style of WLOP, Artgerm, and Greg Rutkowski.
+   ```
+
+12. **Mythical Sea Warrior**
+
+   ```
+   A mythical sea warrior, with hair flowing in the wind and piercing blue eyes, stands on the rocky shore of an island with a stormy sea in the background. She wears gleaming gold and white armor, adorned with big hoop gold earrings and a tiara. A trident and harpoon hang from her belt, ready for battle. This should be a lifelike, super highly detailed, professional digital painting with HD quality and 8k resolution, in the style of Alphonse Mucha, Loish, and Artgerm.
+   ```
+
 These prompt examples showcase how to effectively combine scene descriptions, specific objects, artistic styles, and artist names to guide stable diffusion in generating the desired images.
