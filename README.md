@@ -55,7 +55,19 @@ CLIP (Contrastive Language-Image Pretraining) is an image tagging and zero-shot 
 ocean, beach, sunset, waves, sand, palm trees, golden sky
 ```
 
+or
+
+```
+a masterpiece of an ocean with waves and palm trees, sunset in the east
+```
+
 **Example 2**: An image of a cat sitting on a windowsill might be tagged by CLIP as:
+```
+a fluffy cat sitting on a windowsill, captivated, curious
+```
+
+or 
+
 ```
 cat, windowsill, sitting, whiskers, fluffy, indoor, looking outside
 ```
@@ -63,6 +75,8 @@ cat, windowsill, sitting, whiskers, fluffy, indoor, looking outside
 ### DeepDanbooru
 
 DeepDanbooru is an image tagging system that uses deep learning to automatically assign tags to images, primarily focusing on anime-style and any type of cartoon image. It is trained on a large dataset of images with associated tags, allowing it to recognize a wide range of attributes, characters, and styles.
+
+https://danbooru.donmai.us/tags
 
 **Example 1**: An image of a character with blue hair and and white armor in a forest:
 ```
