@@ -1,4 +1,4 @@
-# Engineering Prompts for Stable Diffusion 📝
+# Stable Diffusion Prompts for Image Generation 📝
 
 A comprehensive guide to crafting effective prompts for stable diffusion.
 
@@ -8,25 +8,26 @@ A comprehensive guide to crafting effective prompts for stable diffusion.
 2. [Prompt Crafting Principles](#prompt-crafting-principles)
 3. [Techniques for Generating Detailed Prompts](#techniques-for-generating-detailed-prompts)
 4. [Handling Common Issues with Prompts](#handling-common-issues-with-prompts)
-5. [Advanced Tips and Tricks](#advanced-tips-and-tricks)
-6. [Prompt Examples](#prompt-examples)
+5. [CLIP and DeepDanbooru for Image Tagging](#clip-and-deepdanbooru-for-image-tagging)
+6. [Negative Prompting with Embeddings](#negative-prompting-with-embeddings)
+7. [Advanced Tips and Tricks](#advanced-tips-and-tricks)
+8. [Prompt Examples](#prompt-examples)
 
 ## Introduction
 
-Stable diffusion is a powerful technique for generating high-quality images using ML models. Crafting effective prompts is crucial to achieving desired results. This guide will provide you with deep insights and recommendations for creating prompts that drive stable diffusion to produce the outcomes you seek.
+Stable Diffusion is a powerful technique for generating high-quality images using ML models. Crafting effective prompts is crucial to achieving desired results. This guide will provide you with deep insights and recommendations for creating prompts.
 
 ## Prompt Crafting Principles
 
-Effective prompt engineering for stable diffusion follows these key principles:
+Effective prompt design for stable diffusion follows these principles:
 
 - **Simplicity**: Start with basic prompts that describe the core concept you want to generate.
 - **Style**: Incorporate elements that define the desired style, such as artist names or specific art styles.
 - **Negative Prompts**: Employ standard negative prompts to guide the model's generation process away from undesirable outcomes.
 - **Sampler Selection**: Choose the appropriate sampler for your desired image quality and details.
 
-## Techniques for Generating Detailed Prompts
 
-To craft detailed prompts that guide stable diffusion effectively, consider the following techniques:
+## Techniques for Generating Detailed Prompts
 
 - **Keyword Combinations**: Combine relevant keywords that describe the scene, objects, and colors you want to include in the generated image.
 - **Explicit Descriptions**: Specify details explicitly, such as textures, lighting, and the position of objects within the scene.
@@ -35,11 +36,71 @@ To craft detailed prompts that guide stable diffusion effectively, consider the 
 
 ## Handling Common Issues with Prompts
 
-Address common issues that may arise during the prompt engineering process:
+Address common issues that may arise during the prompt design process:
 
 - **Soft or Fuzzy Textures**: Experiment with different samplers, moving away from the `euler` family to achieve more interesting and realistic textures.
-- **Lack of Detail**: Add specific keywords to emphasize desired details, such as "freckles, skin pores, detailed skin, goosebumps" for skin textures.
+- **Lack of Detail**: Add specific keywords to emphasize desired details, such as `freckles, skin pores, detailed skin, goosebumps` for skin textures.
 - **Inconsistent Outcomes**: Limit the dimensions of the generated image to avoid consistency issues, and consider upscaling the image as needed.
+
+## CLIP and DeepDanbooru for Image Tagging
+
+In this section, we will discuss two image tagging systems, CLIP and DeepDanbooru, and provide a few simple examples of image tagging with each.
+
+### CLIP
+
+CLIP (Contrastive Language-Image Pretraining) is an image tagging and zero-shot learning model. It is trained on a vast dataset of images and text captions, enabling it to understand and generate a wide variety of tags for images. CLIP can be used to create detailed prompts for stable diffusion models by providing relevant tags that describe the content of an image.
+
+**Example 1**: An image of a beautiful sunset at the beach might be tagged by CLIP as:
+```
+ocean, beach, sunset, waves, sand, palm trees, golden sky
+```
+
+**Example 2**: An image of a cat sitting on a windowsill might be tagged by CLIP as:
+```
+cat, windowsill, sitting, whiskers, fluffy, indoor, looking outside
+```
+
+### DeepDanbooru
+
+DeepDanbooru is an image tagging system that uses deep learning to automatically assign tags to images, primarily focusing on anime-style and any type of cartoon image. It is trained on a large dataset of images with associated tags, allowing it to recognize a wide range of attributes, characters, and styles.
+
+**Example 1**: An image of a character with blue hair and and white armor in a forest:
+```
+1girl, blue_hair, white_armor, smiling, long_hair, ribbon, solo, forest
+```
+
+**Example 2**: An image ofa landscape with a cherry blossom tree:
+```
+cherry_blossoms, no_humans, landscape, tree, sky, petals, scenic
+```
+
+Both CLIP and DeepDanbooru can be used to generate tags for images, which can then be utilized as prompts for stable diffusion models. By employing these tagging systems, you can guide the image generation process more effectively, ensuring that the generated images closely match your desired content and style.
+
+## Negative Prompting with embeddings
+
+Negative prompting is an approach that uses textual inversions or contrasting terms in the prompts to encourage a language model to generate better responses or predictions. This technique can be beneficial when addressing issues like hand-fixing in generated outputs.
+
+One example of negative prompting is the use of EasyNegative embedding, which can be found at [CivitAI](https://civitai.com/models/7808/easynegative) and [Hugging Face](https://huggingface.co/datasets/gsdf/EasyNegative). By incorporating EasyNegative in a negative prompt, it can help improve the quality of generated responses. An example of using EasyNegative in a negative prompt is as follows:
+
+```
+(EasyNegative:1.2), (monochrome:1.1), (greyscale),
+```
+
+![xyz_grid-0039-b644d850c9-3912355876.jpeg](https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8c1de243-daf4-413e-386e-d5b8a33e7e00/width=4096/xyz_grid-0039-b644d850c9-3912355876.jpeg)
+
+
+Another approach to negative prompting is using bad_prompt_v2, a textual inversion that can be employed to correct hand-fixing issues in generated outputs. More information about bad_prompt_v2 can be found on the [Hugging Face page](https://huggingface.co/datasets/Nerfgun3/bad_prompt).
+
+An example of utilizing bad_prompt_v2 in a negative prompt:
+
+```
+(bad_prompt_version2:0.8), (worst quality:1.4), (low quality:1.4) , (monochrome:1.1)
+```
+
+By utilizing resources like EasyNegative and bad_prompt_v2, it is possible to create more accurate and reliable generated responses.
+
+![bad_prompt_showcase.jpg](https://huggingface.co/datasets/Nerfgun3/bad_prompt/resolve/main/bad_prompt_showcase.jpg)
+
 
 ## Advanced Tips and Tricks
 
@@ -54,7 +115,7 @@ By following these guidelines and recommendations, you can craft effective promp
 
 ## Prompt Examples
 
-A collection of prompt examples to inspire and guide the creation of effective prompts for stable diffusion.
+A collection of prompt examples to inspire and guide the creation of effective prompts.
 
 1. **Cyberpunk Cityscape**
 
