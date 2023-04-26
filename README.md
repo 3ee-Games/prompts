@@ -1,6 +1,6 @@
 # Stable Diffusion Prompts for Image Generation 📝
 
-A comprehensive guide to crafting effective prompts for stable diffusion.
+A comprehensive guide to crafting effective prompts in Stable Diffusion.
 
 ## Table of Contents
 
